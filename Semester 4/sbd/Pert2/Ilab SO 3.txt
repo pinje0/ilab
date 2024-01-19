@@ -1,0 +1,42 @@
+cd c:\xampp\mysql\bin
+
+mysql -u root
+
+CREATE DATABASE PEGAWAI;
+
+USE PEGAWAI;
+
+CREATE TABLE PEGAWAI(
+NIP NUMERIC,
+NAMA VARCHAR(30),
+ALAMAT VARCHAR(30));
+
+INSERT INTO pegawai 
+VALUES 
+(93032000,"arie","Payakumbuh Utara"),
+(93032100,"alid","Payakumbuh Selatan"),
+(93032200,"halwa","Payakumbuh Barat"),
+(93032300,"aldam","Payakumbuh Timur");
+
+SELECT * FROM pegawai;
+
+START TRANSACTION;
+
+SELECT * FROM pegawai;
+
+DELETE FROM pegawai WHERE nip="93032300";
+
+SELECT * FROM pegawai;
+
+ROLLBACK;
+
+SELECT * FROM pegawai;
+
+START TRANSACTION;
+
+INSERT INTO pegawai VALUES (93039000,"joko","Payakumbuh Tengah");
+
+COMMIT;
+
+SELECT * FROM pegawai;
+

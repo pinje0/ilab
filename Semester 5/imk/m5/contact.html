@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact | LA M5</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- FontAwesome CDN -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+    </head>
+    <body>
+        <!-- Melvin Austin / 10121709 / 3KA18 -->
+        <div class="main-container">
+            <!-- NAVIGATION BAR -->
+            <div class="container-home-navbar">
+                <ul class="ul-navbar">
+                    <li class="li-navbar">
+                        <a href="#" class="a-navbar">Home</a>
+                    </li>
+                    <li class="li-navbar">
+                        <a href="contact.html" class="a-navbar" target="_blank"
+                            >Contact</a
+                        >
+                    </li>
+                </ul>
+            </div>
+            <!-- MAIN CONTENT -->
+            <div class="container">
+                <div class="form">
+                    <h2 class="title">Contact Me</h2>
+                    <form>
+                        <label for="email">Email : </label>
+                        <input type="text" id="email" name="email" required oninput="checkInput('email')"/>
+
+                        <label for="kelas">Message : </label>
+                        <textarea placeholder="Write your message..." id="message" cols="57" rows="10" required ></textarea>
+
+                        <input class="daftar" type="submit" id="daftar" name="daftar" value="Submit" onclick="clickedAlert()"/>
+                    </form>
+                </div>
+            </div>
+            <!-- FOOTER -->
+            <div class="footer">Copyright &#169; 2024 Melvin Austin.</div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
